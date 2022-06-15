@@ -8,7 +8,7 @@ var totalTasks:number;
 var completedTaskCount:number = 0;
 var taskFocus: HTMLDivElement;
 
-
+//Just testing the commits...
 //Testing a new task Element class
 class taskElement{
     name: string;
