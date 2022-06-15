@@ -8,21 +8,6 @@ var totalTasks:number;
 var completedTaskCount:number = 0;
 var taskFocus: HTMLDivElement;
 
-//Just testing the commits...
-//Testing a new task Element class
-class taskElement{
-    name: string;
-    newTaskContent: string
-    constructor(name: string, newTaskContent: string){
-        this.name = name;
-        this.newTaskContent = newTaskContent;
-    }
-
-    generateElement():HTMLElement{
-        return document.createElement('div');
-    }
-}
-
 function changeFocus(newFocus: HTMLDivElement) {
     taskFocus.style.border = 'initial'
     taskFocus = newFocus;
