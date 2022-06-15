@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Simple Task Manager with Vanilla JS</h1>
+        <h3>By Jack Wheeler</h3>
+        <br>
+        <p id="taskCounter">Place</p>
+
+        <div id="taskList">
+            <div class='task'>
+                <div class="parentTaskContainer">
+                    <p class='taskContent' completed = 'false'>Task List</p>
+                </div>
+                
+                <div class="childTaskContainer">
+                    <div class='task'>
+                        <div class='parentTaskContainer'>
+                            <div class = 'btn' clicked = 'false'>o</div>
+                            <p class='taskContent' completed = 'false'>Task number 1</p>
+                            <div class = 'dlt'>X</div>
+                        </div>
+                        
+                        <div class='childTaskContainer'></div>
+                    </div>
+                    <div class='task'>
+                        <div class='parentTaskContainer'>
+                            <div class = 'btn' clicked = 'false'>o</div>
+                            <p class='taskContent' completed = 'false'>Task number 2</p>
+                            <div class = 'dlt'>X</div>
+                        </div>
+                        <div class='childTaskContainer'></div>
+                    </div>
+                    <div class='task'>
+                        <div class='parentTaskContainer'>
+                            <div class = 'btn' clicked = 'false'>o</div>
+                            <p class='taskContent' completed = 'false'>Task number 3</p>
+                            <div class = 'dlt'>X</div>
+                        </div>
+                        <div class='childTaskContainer'></div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        
+        <div id="addTask">
+            <p id="addBtn">New Task: </p>
+            <input id="taskField" type="text">
+        </div>
+        
+        <script src="dist/index.js" async defer></script>
+    </body>
+</html>
